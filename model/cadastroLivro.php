@@ -1,5 +1,6 @@
 <?php
 require_once("banco.php");
+<link rel="index.html" href="index.html">
 
 class Cadastro extends Banco {
 
