@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos</title>
+</head>
+<body>
+    <h1>Conceitos Aula 03</h1>
+    <h2>Izabela Gomes</h2>
+
+    <h3>Encapsulamento</h3>
+    <p>Encapsulamento é um conceito em programação que se refere a esconder os detalhes internos de um objeto e expor apenas o que é necessário para o uso daquele objeto. Em outras palavras, ele protege os dados de um objeto, permitindo o acesso e a modificação desses dados apenas por meio de métodos definidos. Isso ajuda a manter a integridade dos dados e a evitar alterações indevidas.</p>
+
+    <h3>Controller</h3>
+    <p>Um Controller (ou Controlador) é uma parte de um sistema que lida com a lógica de entrada do usuário e coordena como o sistema responde a essa entrada. Ele atua como intermediário entre a interface do usuário (como uma página web) e a lógica de negócios ou banco de dados. Em frameworks como o MVC (Model-View-Controller), o Controller decide o que fazer com os dados recebidos e qual resposta enviar de volta ao usuário.</p>
+
+    <h3>Model-View-Controller(MVC)</h3>
+    <p>O padrão MVC (Model-View-Controller) é uma arquitetura de software que separa a aplicação em três componentes principais, cada um com uma responsabilidade distinta. A relação entre essas classes é essencial para organizar o código de forma modular e manter a separação de responsabilidades.</p>
+     
+    <h4>Componentes do MVC:</h4>
+    <ol>
+        <li>O que é os componentes do MVC:</li>
+    
+    <ul>
+        <li>Responsabilidade: Representa os dados da aplicação e a lógica de negócios. O Model é responsável por interagir com o banco de dados e manipular os dados conforme necessário.</li>
+        <li>Relação com as outras classes: O Model comunica-se diretamente com o Controller. Ele fornece os dados necessários ao Controller e atualiza os dados quando recebe instruções do Controller.</li>
+    </ul>
+    <p><a href="https://www.google.com/imgres?q=mvc&imgurl=https%3A%2F%2Fres.cloudinary.com%2Fpracticaldev%2Fimage%2Ffetch%2Fs--CGsBK2z7--%2Fc_limit%252Cf_auto%252Cfl_progressive%252Cq_auto%252Cw_880%2Fhttps%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2F7py33y398bt1zbahbp9b.png&imgrefurl=https%3A%2F%2Fdev.to%2Felisangelamsilva%2Fprincipais-conceitos-do-padrao-mvc-model-view-controller-1o5a&docid=">Imagem sobre MVC</a></p> 
+
+    <li>View (Visão):</li>
+    <ul>
+        <li>Responsabilidade: É a interface de usuário. A View é responsável por apresentar os dados ao usuário de maneira visual. Ela exibe as informações fornecidas pelo Model de forma que o usuário possa interagir com elas.</li>
+        <li>Relação com as outras classes: A View recebe dados do Controller para ser exibida ao usuário. Ela depende do Controller para receber as informações que serão apresentadas na interface.</li>
+    </ul>
+    
+    <li>Controller (Controlador):</li>
+    <ul>Responsabilidade: Atua como um intermediário entre o Model e a View. O Controller recebe as entradas do usuário (como cliques ou comandos), processa essas entradas (interage com o Model se necessário) e determina qual View deve ser exibida.</ul>
+    <ul>Relação com as outras classes: O Controller manipula o Model em resposta às ações do usuário e, em seguida, escolhe a View apropriada para apresentar os resultados ao usuário. Ele é o componente que coordena a comunicação entre o Model e a View.</ul>
+
+</ol>  
+
+ <h3>Getters e Setters</h3>
+ <p>Getters e Setters são métodos especiais que permitem acessar e modificar os atributos de uma classe, mantendo o princípio do encapsulamento. Eles são usados para proteger os dados internos de uma classe, controlando como esses dados são acessados e modificados.</p>
+<ul>
+    <li>Getters: São métodos que "pegam" ou retornam o valor de um atributo privado de uma classe.
+        Exemplo: getNome() retorna o valor do atributo nome.</li>
+    <li>Setters: São métodos que "setam" ou atribuem um valor a um atributo privado de uma classe.
+        Exemplo: setNome(String novoNome) altera o valor do atributo nome.</li>
+</ul>
+
+<h3>Relação com as Classes</h3>
+<p>Dentro de uma classe, os atributos são geralmente definidos como privados (ou seja, não podem ser acessados diretamente de fora da classe). Para acessar ou modificar esses atributos, utilizamos getters e setters.</p>
+<ul>
+    <li>Encapsulamento: Ao usar getters e setters, você protege os dados internos de uma classe, pois controla como os atributos podem ser acessados e alterados. Isso ajuda a manter a integridade dos dados, já que você pode adicionar validações dentro dos setters, por exemplo, para garantir que o valor atribuído seja válido.</li>
+
+</ul>
+
+<h3>CRUD</h3>
+<p>é um acrônimo para as operações básicas de Create (Criar), Read (Ler), Update (Atualizar) e Delete (Excluir) que são realizadas em um banco de dados ou em objetos persistentes.</p>
+ <ul>
+    <li>Create (Criar): Corresponde a adicionar novos dados (ou instâncias) a uma base de dados ou coleção.</li>
+    <li>Read (Ler): Corresponde a ler ou recuperar dados existentes.</li> 
+    <li>Update (Atualizar): Corresponde a modificar dados existentes.</li>   
+    <li>Delete (Excluir): Corresponde a remover dados existentes.</li>
+ </ul>
+
+ <h4>Relação entre Getters/Setters e CRUD</h4>
+ <ul>
+    <li>Create: Ao criar um objeto de uma classe, geralmente usamos o construtor para inicializar os atributos. Em alguns casos, podemos usar setters para configurar os valores após a criação do objeto.</li>
+    <li>Read: Para ler os valores dos atributos de um objeto, utilizamos getters. Esses métodos nos permitem acessar os dados encapsulados na classe.</li>
+    <li>Update: Para atualizar ou modificar os valores dos atributos, utilizamos setters. Eles permitem alterar o estado de um objeto de forma controlada.</li>
+    <li>Delete: Embora não diretamente relacionado a getters e setters, o conceito de exclusão geralmente envolve a remoção de objetos ou a alteração de estados que podem ser controlados por setters.</li>
+</ul>
+
+
+</body>
+</html>
