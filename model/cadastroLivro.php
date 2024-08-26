@@ -1,4 +1,4 @@
-<link rel="index.html" href="index.html">
+<link rel="Conceitos + VisualPAradigm" href="index.html">
 
 <?php
 require_once("banco.php");
